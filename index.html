@@ -391,15 +391,69 @@
                     </li>
                 </ul>
             </div>
+            <div class="subscribe">
+                <h2 class="subscribe-title">
+                    Подпишитесь на рассылку
+                </h2>
+                <form class="subscribe-form">
+                    <input class="subscribe-input" type="email" placeholder="E-mail" required>
+                    <button class="subscribe-button" type="submit">Подписаться
+                        <svg class="subscribe-icon">
+                            <use href="./images/icons.svg#icon-send"></use>
+                        </svg>
+                    </button>
+
+                </form>
+            </div>
+
         </div>
     </footer>
+    <!--Модалка-->
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
-            <button type="button" class="modal-close-btn" data-modal-close>
+            <button class="modal-close-btn" type="button" data-modal-close>
                 <svg class="modal-close-icon">
                     <use href="./images/icons.svg#icon-modal-close-btn"></use>
                 </svg>
             </button>
+            <b class="modal-header">Оставьте свои данные, мы вам перезвоним</b>
+            <form class="modal-form">
+
+                <label class="modal-form-label">
+                    Имя
+                    <input class="modal-form-input" name="user-name" type="name" required>
+                    <svg class="modal-form-icon">
+                        <use href="./images/icons.svg#icon-form-person"></use>
+                    </svg>
+                </label>
+                <label class="modal-form-label">
+                    Телефон
+                    <input class="modal-form-input" type="tell" pattern="[0-9]{10}" title="0999009909" required>
+                    <svg class="modal-form-icon">
+                        <use href="./images/icons.svg#icon-form-phone"></use>
+                    </svg>
+                </label>
+                <label class="modal-form-label">
+                    Почта
+                    <input class="modal-form-input" type="email" required>
+                    <svg class="modal-form-icon">
+                        <use href="./images/icons.svg#icon-form-email"></use>
+                    </svg>
+                </label>
+                <label class="modal-form-label modal-form-comment">
+                    Комментарий
+                    <textarea class="modal-form-input modal-form-textarea" name="user-massage"
+                        placeholder="Введите текст"></textarea>
+                </label>
+
+                <input type="checkbox" class="modal-form-policy visually-hidden" id="accept-policy" />
+                <label for="accept-policy" class="modal-form-checkbox">Соглашаюсь с рассылкой и принимаю&nbsp;
+                    <a class="modal-form-conditions" href="#">Условия договора</a>
+                </label>
+
+                <button class="modal-form-submit" type="submit">Отправить</button>
+
+            </form>
         </div>
     </div>
 
